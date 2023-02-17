@@ -8,18 +8,18 @@
 
 int main(void)
 {
-	char c;
+	int c;
 
-	c = '0';
-	while (c <= '9')
+	c = 0;
+	while (c <= 9)
 	{
-		if (c < '9')
+		if (c < 9)
 		{
-			putchar(c);
+			putchar(48 + c++);
 			putchar(',');
 		}
 		else
-			putchar(c);
+			putchar(c++);
 	}
 	putchar('\n');
 	return (0);
