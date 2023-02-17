@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Return: Always 1
+ * Return: Always 0 (success)
  */
 
 int main(void)
@@ -17,5 +17,5 @@ int main(void)
 		c++;
 	}
 	putchar('\n');
-	return (EXIT_SUCCESS);
+	return (0);
 }
