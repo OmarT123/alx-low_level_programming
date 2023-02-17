@@ -17,5 +17,5 @@ int main(void)
 		c++;
 	}
 	putchar('\n');
-	return (1);
+	return (EXIT_SUCCESS);
 }
