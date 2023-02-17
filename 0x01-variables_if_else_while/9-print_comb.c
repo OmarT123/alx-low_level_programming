@@ -14,11 +14,11 @@ int main(void)
 	while (c <= 9)
 	{
 		putchar(48 + c++);
-		putchar(' ');
 		if (c < 9)
 		{
 			putchar(',');
 		}
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
