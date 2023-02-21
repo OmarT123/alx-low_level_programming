@@ -16,8 +16,8 @@ void times_table(void)
 			res = (x + i) * j;
 			if (res > 9)
 			{
-				_putchar((x % 10) + '0');
-				_putchar((x / 10) + '0');
+				_putchar((res % 10) + '0');
+				_putchar((res / 10) + '0');
 			}
 			else
 				_putchar(x + '0');
@@ -29,6 +29,5 @@ void times_table(void)
 				_putchar(' ');
 			}
 		}
-		x++;
 	}
 }
