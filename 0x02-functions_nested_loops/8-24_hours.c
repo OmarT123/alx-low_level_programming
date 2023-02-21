@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * jack_bauer - Print all combinations of hours and minutes
