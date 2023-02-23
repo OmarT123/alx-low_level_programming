@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdbool.h>
 
 /**
  * main - Entry point
@@ -34,5 +35,6 @@ int main(void)
 		if (i != 100)
 			printf(" ");
 	}
+	printf("\n");
 	return (0);
 }
