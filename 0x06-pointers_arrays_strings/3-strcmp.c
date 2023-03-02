@@ -3,8 +3,8 @@
 /**
  * _strcmp - compares two input strings
  * @s1: first string
- * s2: second string
- * Return: negative number if s2 > s1, 0 if s1 = s2, positive number otherwise
+ * @s2: second string
+ * Return: s1[i] - s2[i]
  */
 
 int _strcmp(char *s1, char *s2)
