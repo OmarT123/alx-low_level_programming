@@ -22,7 +22,7 @@ int is_prime_number(int n)
 
 int eval(int n, int r)
 {
-	if (r <= 0)
+	if (r <= 1)
 		return (1);
 	if (n % r == 0)
 		return (0);
