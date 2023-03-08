@@ -1,6 +1,7 @@
 #include "main.h"
 
 int ispal(char *, int, int);
+int getlen(char *);
 
 /**
  * is_palindrome - checks if string is palindrome
@@ -10,14 +11,20 @@ int ispal(char *, int, int);
 
 int is_palindrome(char *s)
 {
-	int i;
+	return (ispal(s, 0, getlen(s) - 1));
+}
 
-	while (s[i])
-	{
-		i++;
-	}
-	i--;
-	return (ispal(s, 0, i));
+/**
+ * getlen - finds length of string
+ * @s: input string
+ * Return: length of s
+ */
+
+int getlen(char *s)
+{
+	if (!*s)
+		return (0);
+	return (1 + getlen(s + 1));
 }
 
 /**
