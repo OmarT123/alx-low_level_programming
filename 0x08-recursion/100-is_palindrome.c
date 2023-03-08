@@ -1,5 +1,7 @@
 #include "main.h"
 
+int ispal(int, int, int);
+
 /**
  * is_palindrome - checks if string is palindrome
  * @s: input string
