@@ -37,7 +37,7 @@ int getlen(char *s)
 
 int ispal(char *s, int f, int i)
 {
-	if (i >= f)
+	if (i <= f)
 		return (1);
 	if (s[i] != s[f])
 		return (0);
