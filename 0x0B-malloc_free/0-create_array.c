@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * create_array - creates array and stores certain value in it
@@ -10,7 +11,15 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *arr = malloc(sizeof(char) * size);
+	char *arr;
+
+	if (size == 0)
+	{
+		printf("failed to allocate memory\n");
+		return (0);
+	}
+	if (*arr = malloc(sizeof(char) * size) == NULL)
+		return (0);
 	unsigned int i;
 
 	for (i = 0; i < size; i++)
