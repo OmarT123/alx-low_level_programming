@@ -82,7 +82,10 @@ int count_words(char *str)
 	for (i = 0; i < strlen(str); i++)
 	{
 		if (str[i] == ' ')
+		{
 			w++;
+			i += wordlen(str + i);
+		}
 	}
 	return (w);
 }
