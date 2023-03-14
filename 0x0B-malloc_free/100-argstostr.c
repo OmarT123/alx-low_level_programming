@@ -34,11 +34,11 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 		{
-			s[c] = av[a][b];
-			c++;
+			s[k] = av[a][b];
+			k++;
 		}
-		s[c] = '\n';
-		c++;
+		s[k] = '\n';
+		k++;
 	}
 	return (s);
 }
