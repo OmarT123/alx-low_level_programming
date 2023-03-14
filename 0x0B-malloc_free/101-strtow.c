@@ -75,7 +75,8 @@ char **strtow(char *str)
 
 int count_words(char *str)
 {
-	int w, i;
+	int w;
+	unsigned long int i;
 
 	w = 0;
 	for (i = 0; i < strlen(str); i++)
