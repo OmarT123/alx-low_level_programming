@@ -25,5 +25,5 @@ int *array_range(int min, int max)
 		res[i] = cur;
 		cur++;
 	}
-	return res;
+	return (res);
 }
