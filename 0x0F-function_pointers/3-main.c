@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -33,5 +33,6 @@ int main(int argc, char *argv[])
 		printf("Error");
 		exit(100);
 	}
-	return ((get_op_func(op))(a, b));
+	printf("%d\n", (get_op_func(op))(a, b));
+	return (0);
 }
