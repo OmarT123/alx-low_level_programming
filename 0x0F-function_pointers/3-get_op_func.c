@@ -13,17 +13,16 @@ int (*get_op_func(char *s))(int, int)
 		{"-", op_sub},
 		{"*", op_mul},
 		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
+		{"%", op_mod}
 	};
-	int i;
+	int i = 0;
 
 	while (i < 5)
 	{
-		if (ops[i][0] == s)
+		if (ops[i].op == s)
 		{
-			return (ops[i][1]);
+			return (ops[i].f);
 		}
 	}
-	return (NULL);
+	return (0);
 }

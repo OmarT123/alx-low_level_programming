@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -17,7 +18,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(98);
 	}
 	a = atoi(argv[1]);
@@ -25,12 +26,12 @@ int main(int argc, char *argv[])
 	op = argv[2];
 	if (strstr(ops, op) == NULL)
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(99);
 	}
-	if (b == 0 && (op == '/' || op == '%'))
+	if (b == 0 && (strstr(op, "/") || strstr(op, "%")))
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(100);
 	}
 	printf("%d\n", (get_op_func(op))(a, b));
