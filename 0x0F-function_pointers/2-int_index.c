@@ -5,6 +5,7 @@
  * @array: input array
  * @size: length of array
  * @cmp: pointer to function that compares values
+ * Return: index of first occurence if found, -1 otherwise
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
