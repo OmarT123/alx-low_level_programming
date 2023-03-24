@@ -26,7 +26,7 @@ int op_sub(int a, int b)
 
 /**
  * op_mul - multiplies two nums
- * @a: input int 
+ * @a: input int
  * @b: input int
  * Return: multiplication of a and b
  */
