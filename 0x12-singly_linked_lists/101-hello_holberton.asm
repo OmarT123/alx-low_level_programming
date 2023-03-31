@@ -1,7 +1,7 @@
 extern printf
 section .data
-db "Hello, Holberton", 0
-db "%s",10,0
+msg:db "Hello, Holberton", 0
+fmt:db "%s",10,0
 section .text
 main: global main
 push rbp
