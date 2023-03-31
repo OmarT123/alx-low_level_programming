@@ -6,7 +6,7 @@
  * before main()
  */
 
-void startFunc(void) __attribute__ ((constructor));
+void startFunc(void) __attribute__ ((const));
 
 /**
  * startFunc - function that executes before main method
