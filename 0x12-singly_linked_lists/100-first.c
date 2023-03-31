@@ -12,7 +12,7 @@ void startFunc(void);
  * startFunc - function that executes before main method
  */
 
-void startFunc(void) __attribute__ ((constructor))
+void __attribute__ ((constructor)) startFunc(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
