@@ -3,7 +3,7 @@
 /**
  * clear_bit - clears bit to 0
  * @n: input int
- * @index index of bit 
+ * @index: index of bit
  * Return: 1 if successful, -1 otherwise
  */
 
